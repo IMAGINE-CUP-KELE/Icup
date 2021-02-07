@@ -1,0 +1,42 @@
+{% extends 'web/main.html' %}
+
+{% block content %}
+
+<body>
+    <h5>Forest temperature</h5>
+    <div class="container-fluid bg-light">
+        <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Current temperature(in degrees celsius)</th>
+                <th scope="col">Position</th>                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>20</td>
+                <td>lc1</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>21</td>
+                <td>lc2</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>23</td>
+                <td>lc3</td>               
+              </tr>
+            </tbody>
+          </table>                    
+    </div>
+
+   
+</body>
+
+
+{% endblock %}

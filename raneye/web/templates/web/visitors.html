@@ -1,0 +1,36 @@
+{% extends 'web/main.html' %}
+
+{% load static %}
+
+{% block content %}
+<body>
+    <br>
+    <h5>Register a visitor</h5>
+    <form>
+        <div class="form-row">
+          <div class="col"></div>
+            <input type="text" class="form-control" placeholder="First name">  
+            <br>       
+            <input type="text" class="form-control" placeholder="Last name">
+            <br> 
+            <input type="text" class="form-control" placeholder="Phone">
+            <br>
+             <!--Grid column-->
+             <div class="col-md-6 mb-4">
+          
+                <form class="md-form">
+                  <div class="file-field">
+                    <div class="z-depth-1-half mb-4">
+                      <img src="{% static 'assets/img/ipbg.png' %}" class="img-fluid"
+                        alt="">
+                    </div>        
+                        <input type="file">
+                  </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      
+</body>
+
+{% endblock %}

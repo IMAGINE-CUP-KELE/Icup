@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing page</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="{% static 'https://use.fontawesome.com/releases/v5.15.1/js/all.js' %}" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:400,700' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' %}" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+		<link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+		<!-- jquery for the carousel-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<!-- for the carousel-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+		<script>
+			window.initializeCarousel=()=>{
+				$("#carouselExampleIndicators").carousel((interval));
+			}
+		</script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">TEAM</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://youtu.be/Tf631tMd1pw">PRESENTATION VIDEO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">                
+				<div class="masthead-heading text-uppercase">Ranger's eye</div>
+                <div class="masthead-subheading">Protecting our wildlife and forests</div>
+                <br>
+                <br>
+                <a class="btn btn-success" href="/home" role="button"> Get started</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">What we do</h2>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'assets/img/index10.jpg' %}" class="img-fluid d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Detection and classification of wildlife</h5>
+                            <p>Our sensors distributed across the reserve sense motion and trigger the cameras to go on and take photos. The images taken are then classified using an AI model trained to classify them and sent to the website.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/index13.jpg' %}" class="d-block w-100 h-250px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Heat signature reading</h5>
+                            <p>We use a passive infrared sensor to read the heat signatures across the reserve and compare them to the expected parameters. If they rise to an unexpected limit the concerned authorities are then alerted so as to avert disasters or greatly reduce the damage caused.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'assets/img/index7(cropped).jpg' %}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Notification of intruders to the concerned authorities.</h5>
+                            <p>In the case of an unauthorised intruder caught by the cameras, who could be a poacher or a logger, their photo is sent to the concerned authorities for quick action to be taken.</p>
+                          </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      
+                    </a>
+                  </div>
+            </div>
+        </section>
+        
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+               
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/kele.png' %}" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Our solution</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">RANGER’S EYE
+
+                                Wildfires, deforestation and poaching are some of the activities that have led to the loss of animal life as well as plant life. The imprecision that is also involved when tourist visit game reserves as well as parks has caused many tourists to be disappointed leading to a depreciation in tourism, a major source of income for many countries . The ranger’s eye is a solution that seeks to ensure that all wildlife position, safety and forestry is well accounted for at any given time.                            
+                                The solution proposed utilizes a raspberry pi and a raspberrypi camera, and Passive Infrared Sensor as well as Sim808 for messaging or data transmission. It works by having these devices set up at frequented positions in the game park as well as the entry and exit points. All people with permission to enter the park must be registered into the system. When an animal or any motion is sensed, a camera comes on that can take a picture within its eye view and data from the picture is analyzed. Image detection and classification is done such that in case an animal is observed then a signal containing the name of the animal is sent to a database and later reflected on a web application indicating the animal position. 
+                                In the case of a poacher, the data from the camera can identify one as an unknown or as an unexpected guest and therefore raise an alert through sending a signal to the IoT Central that is connected to an alert service. 
+                                In case of a predicted fire, our Infrared heat sensor will determine the limits of the heat and then compare against the expected parameters. In case the parameters are exceeded then a signal indicating a distress is sent to IoT hub from where a pipeline that connects through the stream analytics and finally the powerBI dashboard allows this information to alert the concerned parties.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/team2.png' %}" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Our team</h4>                                
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The team Kele IT is comprised of two students, a fourth year electrical and electronics engineering student at the Dedan Kimathi University of Technology and a third year computer science student at the University of Nairobi. We are passionate about addressing local and international problems using the skills and knowledge acquired plus exploiting the technology available to us.</p></div>
+                        </div>
+                    </li> 
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Our 
+                                <br />
+                                journey
+                                <br />
+                                continues...
+                            </h4>
+                        </div>
+                    </li>                 
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team Members</h2>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpeg' %}" alt="" />
+                            <h4>Kelvin Newton</h4>
+                            <p class="text-muted">Tech lead</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/11.jpg' %}" alt="" />
+                            <h4>Leah Ligare</h4>
+                            <p class="text-muted">Team lead</p>
+
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted"><b>Our email: Keleit21@gmail.com</b></h3>
+                </div>             
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left"><h5>Ranger's eye | Copyright &copy;|2021</h5> </div>                  
+                </div>
+            </div>
+        </footer>
+       
+       
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' %}"></script>
+        <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Third party plugin JS-->
+        <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' %}"></script>
+        <!-- Contact form JS-->
+        <script src="{% static 'assets/mail/jqBootstrapValidation.js' %}"></script>
+        <script src="{% static 'assets/mail/contact_me.js' %}"></script>
+        <!-- Core theme JS-->
+		<script src="{% static 'js/scripts.js' %}"></script>
+	
+
+		
+    </body>
+</html>

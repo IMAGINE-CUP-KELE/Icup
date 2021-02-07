@@ -1,0 +1,124 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+    <h5>Wildlife classification</h5>
+    <div class="container-fluid bg-light">       
+        <div class="row">
+          <div class="col-12">
+              <table class="table table-image">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Animal image</th>
+                    <th scope="col">Animal Name</th>
+                    <th scope="col">Position</th>                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl1.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Mamba</td>
+                    <td>l1</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl2.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Lion</td>
+                    <td>l2</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl3.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Leopard</td>
+                    <td>l3</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl4.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Zebra</td>
+                    <td>l4</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl5.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Gazelle</td>
+                    <td>l1</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl6.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Antelope</td>
+                    <td>l6</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl7.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Rhino</td>
+                    <td>l7</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td class="w-25">
+                        <img src="{% static 'assets/img/wl8.jpg' %}"class="img-fluid img-thumbnail" alt="">
+                    </td>
+                    <td>Buffalo</td>
+                    <td>l8</td>                    
+                  </tr>
+                </tbody>
+              </table>   
+          </div>
+        </div>
+      </div>                 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h5>Areas frequented by wildlife</h5>    
+        <div class="container-fluid bg-light">
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Position</th> 
+                    <th scope="col">Animal type</th>                                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>l11-l14</td> 
+                    <td>Lions</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>l15-l16</td>
+                    <td>Gazelles</td>
+                  </tr>
+
+                </tbody>
+              </table>                    
+        </div>
+        
+</body>
+
+
+{% endblock %}

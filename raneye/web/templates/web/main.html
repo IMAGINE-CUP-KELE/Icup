@@ -1,0 +1,22 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> rangeye </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        {% include 'web/navbar.html'%}
+        {% block content %}
+
+
+        {% endblock %}
+        
+        <div class="fixed-bottom">
+            <hr>
+           <h6>Ranger's eye| Copyright &copy;|2021</h6> 
+        </div>
+        
+    </body>
+</html>
